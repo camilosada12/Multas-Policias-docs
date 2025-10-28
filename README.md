@@ -5,7 +5,6 @@ Este workspace contiene cinco repositorios independientes:
 
 | Repositorio | Descripción |
 |-------------|-------------|
-| [Palermo-docs](./Palermo-docs) | Documentación, diagramas de arquitectura y ADRs |
 | [Palermo-api](./Palermo-api) | API REST de backend y lógica de negocio |
 | [Palermo-portal](./Palermo-portal) | Frontend web para usuarios finales |
 | [Palermo-app](./Palermo-app) | Aplicación móvil |
