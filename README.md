@@ -5,10 +5,10 @@ Este workspace contiene cinco repositorios independientes:
 
 | Repositorio | Descripción |
 |-------------|-------------|
-| [Palermo-api](./Palermo-api) | API REST de backend y lógica de negocio |
-| [Palermo-portal](./Palermo-portal) | Frontend web para usuarios finales |
-| [Palermo-app](./Palermo-app) | Aplicación móvil |
-| [Palermo-db](./Palermo-db) | Esquema de base de datos y migraciones |
+| [Palermo-api](https://github.com/camilosada12/Multas-Policias-Api) | API REST de backend y lógica de negocio |
+| [Palermo-portal](https://github.com/camilosada12/Multas-Policias-Portal) | Frontend web para usuarios finales |
+| [Palermo-app](https://github.com/camilosada12/Multas-Policias-App) | Aplicación móvil |
+| [Palermo-db](https://github.com/camilosada12/Multas-Policias-db) | Esquema de base de datos y migraciones |
 
 ### Clonar el workspace con submódulos
 
