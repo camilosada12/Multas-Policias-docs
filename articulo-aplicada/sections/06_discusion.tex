@@ -1,0 +1,6 @@
+\section{Discusión}
+El SCMC se encuentra en la Fase 3 (Procesamiento) de la implementación de e-commerce (Articulo 12). El análisis de la literatura confirma que la decisión de implementar Wompi es acertada.
+
+La discusión central es que el verdadero trabajo de integración no ocurre en el frontend de Angular (que solo redirige), sino en el backend de C\#. El Controlador de Webhook es el componente más crítico del sistema transaccional.
+
+El trabajo reciente del equipo de desarrollo (migraciones de DB y ajuste de rutas) es fundamental, ya que este \textit{endpoint} de Webhook debe ser estable, seguro y rápido. Si el backend C\# no procesa el Webhook de forma atómica e instantánea, el proyecto fracasará en su objetivo principal y volverá al problema de la latencia (el problema de Articulo 10). La integración de la PP consolida la robusta arquitectura del SCMC, que ya incluye patrones de diseño avanzados como Strategy y Repository, y un sistema de seguridad granular basado en roles y JWT.

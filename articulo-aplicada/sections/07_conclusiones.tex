@@ -1,0 +1,10 @@
+\section{Conclusiones}
+Implementación Obligatoria: La integración de una PP es un requisito no negociable para la viabilidad del SCMC. Basado en el análisis de mercado, Wompi es una elección estratégica y robusta.
+
+Arquitectura S2S/Webhook: El modelo de Checkout por Redireccionamiento + Webhooks S2S es la arquitectura óptima. Es la más rápida de implementar (Articulo 2) y la única que garantiza la conciliación en tiempo real (Articulo 10).
+
+Responsabilidades del Stack:
+\begin{itemize}
+    \item \textbf{C\# (Backend):} Debe ser el guardián de la transacción. Su rol es validar criptográficamente el Webhook y aplicar el pago atómicamente en la DB.
+    \item \textbf{Angular (Frontend):} Debe ser el motor de la confianza, implementando RWD y el ícono PSE para asegurar la máxima adopción ciudadana.
+\end{itemize}

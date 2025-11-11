@@ -1,0 +1,38 @@
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+[htbp]
+    \centering
+    \includegraphics[width=0.45\textwidth]{graphics/comparacion_metodologias.pdf}
+    \caption{Comparación multi-criterio de metodologías ágiles: Scrum, Kanban y XP}
+    \label{fig:comparacion_metodologias}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+[htbp]
+    \centering
+    \includegraphics[width=0.46\textwidth]{graphics/correlacion_devops.pdf}
+    \caption{Correlación entre nivel de automatización y performance del equipo de desarrollo}
+    \label{fig:correlacion_devops}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+[htbp]
+    \centering
+    \includegraphics[width=0.48\textwidth]{graphics/metricas_dora.pdf}
+    \caption{Métricas DORA por equipo: frecuencia de deployment y lead time}
+    \label{fig:metricas_dora}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+[htbp]
+    \centering
+    \includegraphics[width=0.48\textwidth]{graphics/evolucion_metricas.pdf}
+    \caption{Evolución temporal de métricas de calidad durante el año 2024}
+    \label{fig:evolucion_metricas}
+\end{figure*}

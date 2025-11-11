@@ -1,0 +1,44 @@
+\section{Implementación (El Modelo Wompi con C\# y Angular)}
+La implementación se divide en el frontend (solicitud) y el backend (conciliación), aprovechando el \textit{stack} tecnológico existente del SCMC.
+
+\subsection{Frontend (Angular): La Puerta de Confianza}
+El rol de Angular es iniciar el pago y generar confianza.
+
+\textbf{Interfaz de Pago:} El componente de Angular debe ser 100\% Responsive (RWD), adaptándose a móviles y computadoras.
+
+\textbf{Señales de Confianza:} Debe mostrar prominentemente los logos de Wompi y el ícono PSE (Articulo 16) para asegurar la percepción de seguridad.
+
+\textbf{Flujo de Redirección:}
+\begin{itemize}
+    \item El ciudadano confirma la multa o acuerdo de pago en Angular.
+    \item Angular llama al backend C\# (Endpoint 1) para obtener los datos de la transacción.
+    \item C\# devuelve la URL de \textit{checkout} de Wompi.
+    \item Angular redirige al ciudadano a la página segura de Wompi (Checkout por Redireccionamiento).
+\end{itemize}
+
+\subsection{Backend (C\#): El Motor de Conciliación}
+El backend de C\# es el cerebro de la operación. Debe exponer dos \textit{endpoints} (Controladores) críticos:
+
+\textbf{Endpoint 1: C\# - Controlador de Inicio de Pago (\texttt{[HttpPost] /api/pagos/iniciar})}
+\begin{itemize}
+    \item \textbf{Función:} Recibe la solicitud de Angular (ej. MultaID, Monto).
+    \item \textbf{Lógica C\#:}
+        \begin{enumerate}
+            \item Consulta la multa en la DB (SQL Server, PostgreSQL o MySQL).
+            \item Genera una Referencia Única de transacción para el SCMC.
+            \item Calcula la Firma de Integridad (signature - Hash SHA-256) usando la llave privada de Wompi. Esto es esencial para que Wompi acepte la transacción (Articulo 20).
+            \item Define la \texttt{redirect\_url} (a dónde vuelve el usuario) y, crucialmente, la \texttt{webhook\_url} (Endpoint 2).
+            \item Devuelve el objeto de solicitud (o la \texttt{checkoutUrl}) a Angular.
+        \end{enumerate}
+\end{itemize}
+
+\textbf{Endpoint 2: C\# - Controlador de Webhook (CRÍTICO) (\texttt{[HttpPost] /api/webhooks/wompi-callback})}
+\begin{itemize}
+    \item \textbf{Función:} Este \textit{endpoint} no es llamado por el usuario, sino por el servidor de Wompi de forma asíncrona (S2S) cuando el pago es APROBADO.
+    \item \textbf{Lógica C\# (Aplicación Atómica):}
+        \begin{enumerate}
+            \item \textbf{Verificación de Seguridad:} El código C\# debe validar la firma de integridad del Webhook para asegurar que la solicitud es auténtica y no fraudulenta (Articulo 20).
+            \item \textbf{Conciliación:} Si la firma es válida y el estado es APROBADO, el backend de C\# ejecuta una transacción de base de datos atómica: \texttt{UPDATE Multas SET Estado = 'Pagada', IDTransaccionWompi = @id\_wompi WHERE Referencia = @ref\_wompi}.
+            \item \textbf{Notificación:} Dispara el servicio de notificaciones (Email/Telegram) para enviar el Paz y Salvo por email/SMS al ciudadano.
+        \end{enumerate}
+\end{itemize}

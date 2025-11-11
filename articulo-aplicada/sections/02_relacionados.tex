@@ -1,0 +1,22 @@
+\section{Marcos Técnicos y Estudios Relacionados (Relacionados)}
+La decisión de proponer la integración de Wompi se fundamenta en un análisis de la literatura sobre implementaciones de e-commerce y recaudos masivos.
+
+\subsection{El Caso de la Conciliación Manual (Articulo 10)}
+El estudio de caso sobre la mejora en la aplicación de recaudos de matrículas en Uniminuto (Articulo 10) es el principal referente. Dicho estudio identificó que la aplicación manual diferida de pagos (24-48 horas) era el mayor punto de dolor del proceso. La solución propuesta fue la automatización mediante la integración del sistema financiero (ERP) con la PP a través de BAPIS y conectores. Esto demuestra que el problema que enfrenta el SCMC es un desafío de integración conocido y resuelto en el sector de recaudos.
+
+\subsection{Estrategia de Implementación: Agilidad vs. Construcción Propia (Articulo 2)}
+El caso de "Pasarela Virtual" (Articulo 2) analizó dos escenarios para la innovación tecnológica: desarrollo interno (Solución 1) versus tercerización (Solución 2). La tercerización (análoga a integrar Wompi) demostró ser drásticamente más rápida (8 meses vs. 18 meses para salir a producción). Para el SCMC, un proyecto académico enfocado en la agilidad, integrar Wompi es la estrategia de \textit{time-to-market} más eficiente.
+
+\subsection{Requerimientos de Adopción Ciudadana (Articulo 16)}
+Un sistema público no solo debe funcionar, debe ser usado. El estudio UTAUT2 (Articulo 16) sobre la adopción de pagos en línea identificó los factores no técnicos que determinan el éxito:
+\begin{itemize}
+    \item \textbf{Confianza y Seguridad Percibida:} Son las variables más influyentes.
+    \item \textbf{Señales de Confianza Específicas:} La confianza en Colombia no se genera con íconos genéricos, sino con sellos locales. El ícono PSE es el factor de confianza más crítico.
+    \item \textbf{Diseño (RWD):} El Responsive Web Design (que el sitio se adapte al móvil) tiene un efecto estadísticamente significativo en la intención de completar el pago.
+\end{itemize}
+
+\subsection{El Modelo Arquitectónico (Articulo 19)}
+El proyecto "Carwash" (Articulo 19) documenta un \textit{stack} tecnológico similar (Java/Angular, Microservicios, MySQL). Su arquitectura proporciona un modelo validado para el SCMC, utilizando un API Gateway para gestionar las comunicaciones y servicios en la nube como AWS SNS/SES para las notificaciones automáticas de pago, un patrón que el SCMC (C\#) puede replicar.
+
+\subsection{Requisitos de Seguridad Obligatorios (Articulo 20)}
+La integración de una PP es una obligación regulatoria. En Colombia, la Superfinanciera exige el cumplimiento de la norma PCI DSS 3.2.1 desde 2018. Al utilizar una PP certificada como Wompi, el SCMC delega la complejidad de esta certificación (firewalls, cifrado de datos, monitoreo de seguridad), reduciendo drásticamente el riesgo y el costo del proyecto.

@@ -1,0 +1,245 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{fowler2006continuous}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=312ac886938a9b2be4f8eb607567fe4c}{%
+           family={Fowler},
+           familyi={F\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=894bde5a53a8825441e5f642f623eae3}{%
+           family={Foemmel},
+           familyi={F\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{d7769c586ce56b5a73110d573b5398e8}
+      \strng{fullhash}{d7769c586ce56b5a73110d573b5398e8}
+      \strng{fullhashraw}{d7769c586ce56b5a73110d573b5398e8}
+      \strng{bibnamehash}{d7769c586ce56b5a73110d573b5398e8}
+      \strng{authorbibnamehash}{d7769c586ce56b5a73110d573b5398e8}
+      \strng{authornamehash}{d7769c586ce56b5a73110d573b5398e8}
+      \strng{authorfullhash}{d7769c586ce56b5a73110d573b5398e8}
+      \strng{authorfullhashraw}{d7769c586ce56b5a73110d573b5398e8}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{ThoughtWorks}
+      \field{title}{Continuous Integration}
+      \field{year}{2006}
+      \verb{urlraw}
+      \verb https://martinfowler.com/articles/continuousIntegration.html
+      \endverb
+      \verb{url}
+      \verb https://martinfowler.com/articles/continuousIntegration.html
+      \endverb
+    \endentry
+    \entry{beck2003testdriven}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=c5dcbe71f60a8d55caa11fe1493614d0}{%
+           family={Beck},
+           familyi={B\bibinitperiod},
+           given={Kent},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley Professional}%
+      }
+      \strng{namehash}{c5dcbe71f60a8d55caa11fe1493614d0}
+      \strng{fullhash}{c5dcbe71f60a8d55caa11fe1493614d0}
+      \strng{fullhashraw}{c5dcbe71f60a8d55caa11fe1493614d0}
+      \strng{bibnamehash}{c5dcbe71f60a8d55caa11fe1493614d0}
+      \strng{authorbibnamehash}{c5dcbe71f60a8d55caa11fe1493614d0}
+      \strng{authornamehash}{c5dcbe71f60a8d55caa11fe1493614d0}
+      \strng{authorfullhash}{c5dcbe71f60a8d55caa11fe1493614d0}
+      \strng{authorfullhashraw}{c5dcbe71f60a8d55caa11fe1493614d0}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0321146530}
+      \field{title}{Test-Driven Development: By Example}
+      \field{year}{2003}
+    \endentry
+    \entry{chen2015devops}{inproceedings}{}{}
+      \name{author}{1}{}{%
+        {{hash=d1bcd5ec0d9d6dc0db914feb770b5b2e}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Lianping},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{d1bcd5ec0d9d6dc0db914feb770b5b2e}
+      \strng{fullhash}{d1bcd5ec0d9d6dc0db914feb770b5b2e}
+      \strng{fullhashraw}{d1bcd5ec0d9d6dc0db914feb770b5b2e}
+      \strng{bibnamehash}{d1bcd5ec0d9d6dc0db914feb770b5b2e}
+      \strng{authorbibnamehash}{d1bcd5ec0d9d6dc0db914feb770b5b2e}
+      \strng{authornamehash}{d1bcd5ec0d9d6dc0db914feb770b5b2e}
+      \strng{authorfullhash}{d1bcd5ec0d9d6dc0db914feb770b5b2e}
+      \strng{authorfullhashraw}{d1bcd5ec0d9d6dc0db914feb770b5b2e}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IEEE Software}
+      \field{number}{2}
+      \field{title}{Continuous Delivery: Huge Benefits, but Challenges Too}
+      \field{volume}{32}
+      \field{year}{2015}
+      \field{pages}{50\bibrangedash 54}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/MS.2015.27
+      \endverb
+    \endentry
+    \entry{martin2008clean}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=6f41df64eb0dc4855be70172368604c2}{%
+           family={Martin},
+           familyi={M\bibinitperiod},
+           given={Robert\bibnamedelima C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall}%
+      }
+      \strng{namehash}{6f41df64eb0dc4855be70172368604c2}
+      \strng{fullhash}{6f41df64eb0dc4855be70172368604c2}
+      \strng{fullhashraw}{6f41df64eb0dc4855be70172368604c2}
+      \strng{bibnamehash}{6f41df64eb0dc4855be70172368604c2}
+      \strng{authorbibnamehash}{6f41df64eb0dc4855be70172368604c2}
+      \strng{authornamehash}{6f41df64eb0dc4855be70172368604c2}
+      \strng{authorfullhash}{6f41df64eb0dc4855be70172368604c2}
+      \strng{authorfullhashraw}{6f41df64eb0dc4855be70172368604c2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780132350884}
+      \field{title}{Clean Code: A Handbook of Agile Software Craftsmanship}
+      \field{year}{2008}
+    \endentry
+    \entry{dora2021metrics}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=0dc9ac8a967e13c60fcfaedde74976f2}{%
+           family={Forsgren},
+           familyi={F\bibinitperiod},
+           given={Nicole},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{0dc9ac8a967e13c60fcfaedde74976f2}
+      \strng{fullhash}{0dc9ac8a967e13c60fcfaedde74976f2}
+      \strng{fullhashraw}{0dc9ac8a967e13c60fcfaedde74976f2}
+      \strng{bibnamehash}{0dc9ac8a967e13c60fcfaedde74976f2}
+      \strng{authorbibnamehash}{0dc9ac8a967e13c60fcfaedde74976f2}
+      \strng{authornamehash}{0dc9ac8a967e13c60fcfaedde74976f2}
+      \strng{authorfullhash}{0dc9ac8a967e13c60fcfaedde74976f2}
+      \strng{authorfullhashraw}{0dc9ac8a967e13c60fcfaedde74976f2}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Queue}
+      \field{title}{DORA Metrics in Practice}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://queue.acm.org/
+      \endverb
+      \verb{url}
+      \verb https://queue.acm.org/
+      \endverb
+    \endentry
+    \entry{forsgren2018accelerate}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=0dc9ac8a967e13c60fcfaedde74976f2}{%
+           family={Forsgren},
+           familyi={F\bibinitperiod},
+           given={Nicole},
+           giveni={N\bibinitperiod}}}%
+        {{hash=9e89d796d06f74d6551850b1c3bff900}{%
+           family={Humble},
+           familyi={H\bibinitperiod},
+           given={Jez},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8e1c949be5801a6f56b7ac5df47a58a9}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Gene},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{6182ff2ce3d65afe566932add04e4d0a}
+      \strng{fullhash}{b3a03bdb03f26ee6030a135e12ea135c}
+      \strng{fullhashraw}{b3a03bdb03f26ee6030a135e12ea135c}
+      \strng{bibnamehash}{b3a03bdb03f26ee6030a135e12ea135c}
+      \strng{authorbibnamehash}{b3a03bdb03f26ee6030a135e12ea135c}
+      \strng{authornamehash}{6182ff2ce3d65afe566932add04e4d0a}
+      \strng{authorfullhash}{b3a03bdb03f26ee6030a135e12ea135c}
+      \strng{authorfullhashraw}{b3a03bdb03f26ee6030a135e12ea135c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IT Revolution}
+      \field{title}{Accelerate: The Science of Lean Software and DevOps}
+      \field{year}{2018}
+    \endentry
+    \entry{fitzpatrick2017risks}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=cd4f9f6fa14ca50e8d52fdf3716b4e06}{%
+           family={Fitzpatrick},
+           familyi={F\bibinitperiod},
+           given={Gerald},
+           giveni={G\bibinitperiod}}}%
+        {{hash=d88bfec92aef818de9532a68531f7f5c}{%
+           family={Storey},
+           familyi={S\bibinitperiod},
+           given={Margaret-Anne},
+           giveni={M\bibinithyphendelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{527629362ac4e660a39b24245336242c}
+      \strng{fullhash}{527629362ac4e660a39b24245336242c}
+      \strng{fullhashraw}{527629362ac4e660a39b24245336242c}
+      \strng{bibnamehash}{527629362ac4e660a39b24245336242c}
+      \strng{authorbibnamehash}{527629362ac4e660a39b24245336242c}
+      \strng{authornamehash}{527629362ac4e660a39b24245336242c}
+      \strng{authorfullhash}{527629362ac4e660a39b24245336242c}
+      \strng{authorfullhashraw}{527629362ac4e660a39b24245336242c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Software}
+      \field{number}{6}
+      \field{title}{The Risks of Good Enough Software Engineering}
+      \field{volume}{34}
+      \field{year}{2017}
+      \field{pages}{14\bibrangedash 19}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/MS.2017.4121224
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

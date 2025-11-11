@@ -1,0 +1,17 @@
+\section{Introducción}
+
+\subsection{Contexto del Proyecto Académico SCMC}
+El SCMC es un proyecto académico de software integral diseñado para la Alcaldía de Palermo, enfocado en modernizar la gestión de comparendos del Código de Policía. El sistema, construido sobre un \textit{stack} tecnológico robusto (C\# .NET 8 y Angular 16), ya define una arquitectura avanzada que incluye autenticación JWT, gestión de roles (RBAC) y un diseño de base de datos modular.
+
+\subsection{El Problema: El Vacío Transaccional}
+A pesar de la avanzada arquitectura de gestión de datos, el SCMC aún no ha abordado la digitalización del módulo de pago. La especificación de requisitos actual contempla un proceso obsoleto: el ciudadano debe realizar los pagos "en la Alcaldía Municipal o en los bancos autorizados" y gestionar los acuerdos "presencialmente".
+
+Este modelo manual presenta tres problemas críticos que el SCMC busca resolver:
+\begin{itemize}
+    \item \textbf{Ineficiencia Operativa:} Requiere conciliación manual de extractos bancarios, un proceso lento y propenso a errores.
+    \item \textbf{Mala Experiencia Ciudadana:} El ciudadano no recibe la subsanación (paz y salvo) de su multa en tiempo real, generando desconfianza.
+    \item \textbf{Costos Ocultos:} La gestión manual de recaudos incrementa la carga administrativa y los costos operativos, un problema documentado extensamente en la literatura (Articulo 10).
+\end{itemize}
+
+\subsection{Propuesta y Objetivo}
+Este artículo propone la implementación de la pasarela de pago Wompi como el componente faltante para completar el ciclo de vida digital del comparendo. El objetivo es detallar la arquitectura técnica y la justificación estratégica para una implementación ágil S2S (Servidor-a-Servidor) que asegure la conciliación automática y en tiempo real de los comparendos y acuerdos de pago.
